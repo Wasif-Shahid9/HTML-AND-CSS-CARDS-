@@ -1,0 +1,127 @@
+.box-1{
+    position: relative;
+    width: 350px;
+    height: auto;
+
+}
+.box-1 img{
+    width: 100%; 
+    height: auto;
+}
+
+.box-1 .color{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;
+    transition: all 1s ease 0s;
+  
+}
+
+.box-1 .color::before{
+    background-color: rgba(74,169,51,0.8);
+    content: "";
+    display: inline-block;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    z-index: -1;
+}
+ .box-1 .color .icon-1 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-color: #000;
+    border-radius: 50%;
+    line-height: 60px;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid red;
+    transition: all 1s ease 0s;
+} 
+
+/* .color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: green;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    z-index: 1;
+    transition: all 1s ease 0s;
+}  */
+.box-1 h3{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.72px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 60px;
+    text-align: center;
+    z-index: 1;
+}
+
+.box-1 span{
+    color: #232323;
+    font-style: italic;
+    text-transform: capitalize;
+    letter-spacing: 0.72px;
+    margin-left: 20px;
+    z-index: 1;
+    font-weight: bolder;
+}
+ .box-1 .circle{
+    position: absolute;
+    top: 18%;
+   left: 50%;
+   transform: translate(-50%, -50% );
+    height: 55px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 2;
+    /* transition: all 1s ease 0s; */
+}
+.box-1 .circle i{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    font-size: 22px;
+} 
+.box-1 ul{
+    display: flex;
+    justify-content: center;
+    
+    transition: all 1s ease 0s;
+
+
+}
+.box-1 ul li{
+    list-style: none;
+    margin: 0 12px;
+}
+.box-1 ul li i{
+    color: white;
+    /* border: 2px solid red; */
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0;
+}
+.box-1:hover i{
+    opacity: 1;
+    height: 30px;
+   
+}
+
+
